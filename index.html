@@ -49,13 +49,17 @@
 
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/sdf.png" alt="clean-usnob" width="250" height="100">
+                <img src="images/quark.png" alt="clean-usnob" width="250" height="100">
               </td>
               <td width="75%" valign="middle">  
-              <span class="papertitle">Coming (very) soon</span>
+                <span class="papertitle">Quark: Real-time, High-resolution, and General Neural View Synthesis</span>
+                <br>
+                <a href="https://www.linkedin.com/in/john-flynn-5766b11/">John Flynn*</a>, <a href="https://broxtronix.github.io/">Michael Broxton*</a>, <a href="http://lmurmann.net/">Lukas Murmann*</a>, <a href="https://chail.github.io/"Lucy Chai</a>, <a href="https://matthewduvall.com/">Matthew DuVall</a>, <a href="http://www0.cs.ucl.ac.uk/staff/C.Godard/">Cl&#233;ment Godard</a>, <a href="https://www.kathrynheal.com/">Kathryn Heal</a>, <strong>Srinivas Kaza</strong>, <a href="https://stephenlombardi.github.io/">Stephen Lombardi</a>, <a href="https://roxanneluo.github.io/">Xuan Luo</a>, <a href="https://scholar.google.com/citations?user=xDYdjOkAAAAJ&hl=en">Supreeth Achar</a>, <a href="https://quark-3d.github.io/#">Kira Prabhu</a>, <a href="https://www.kevinkingo.com/">Tiancheng Sun</a>, <a href="https://quark-3d.github.io/#">Lynn Tsai</a>, <a href="https://www.linkedin.com/in/ryan-overbeck-b3983319">Ryan Overbeck</a>
+                <br>
               <br>
               <em>SIGGRAPH Asia</em>, 2024 &nbsp
               <br>
+              <p>We present a novel neural algorithm for performing high-quality, high-resolution, real-time novel view synthesis. From a sparse set of input RGB images or videos streams, our network both reconstructs the 3D scene and renders novel views at 1080p resolution at 30fps on an NVIDIA A100. Our feed-forward network generalizes across a wide variety of datasets and scenes and produces state-of-the-art quality for a real-time method. Our quality approaches, and in some cases surpasses the quality of some of the top offline methods. In order to achieve these results we use a novel combination of several key concepts, and tie them together into a cohesive and effective algorithm. We build on previous work that represent the scene using semi-transparent layers and use an iterative learned render-and-refine approach to improve those layers. Instead of flat layers, our method reconstructs layered depth maps (LDMs) that efficiently represent scenes with complex depth and occlusions. The iterative update steps are embedded in a multi-scale, UNet-style architecture to perform as much compute as possible at reduced resolution. Within each update step, to better aggregate the information from multiple input views, we use a specialized Transformer-based network component. This allows the majority of the per-input image processing to be performed in the input image space, as opposed to layer space, further increasing efficiency. Finally, due to the real-time nature of our reconstruction and rendering, we dynamically create and discard the internal 3D geometry for each frame, optimizing the LDM for each view. Taken together, this produces a novel and effective algorithm for view synthesis. Through extensive evaluation, we demonstrate that we achieve state-of-the-art quality at real-time rates.</p>
               </td>
             </tr>
             
